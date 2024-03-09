@@ -1,0 +1,163 @@
+[ N 2024-03-09 19:08:09.9671 10106/T1 age/Wat/WatchdogMain.cpp:1373 ]: Starting Passenger watchdog...
+[ N 2024-03-09 19:08:09.9814 10109/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-03-09 19:08:09.9816 10109/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-03-09 19:08:10.0442 10109/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 10109
+App 10187 output: config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+App 10187 output: 
+App 10187 output:   * development - set it to false
+App 10187 output:   * test - set it to false (unless you use a tool that preloads your test environment)
+App 10187 output:   * production - set it to true
+App 10187 output: 
+App 10222 output: Error: The application encountered the following error: The `staging` database is not configured for the `staging` environment.
+App 10222 output: 
+App 10222 output:   Available database configurations are:
+App 10222 output: 
+App 10222 output:   default
+App 10222 output: development
+App 10222 output: test
+App 10222 output: production
+App 10222 output:  (ActiveRecord::AdapterNotSpecified)
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/database_configurations.rb:229:in `resolve_symbol_connection'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/database_configurations.rb:179:in `resolve'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/connection_handling.rb:354:in `resolve_config_for_connection'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/connection_handling.rb:52:in `establish_connection'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/railtie.rb:304:in `block (2 levels) in <class:Railtie>'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:97:in `class_eval'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:97:in `block in execute_hook'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:87:in `with_execution_control'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:92:in `execute_hook'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:78:in `block in run_load_hooks'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:77:in `each'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activesupport-7.1.3.2/lib/active_support/lazy_load_hooks.rb:77:in `run_load_hooks'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/base.rb:338:in `<module:ActiveRecord>'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/activerecord-7.1.3.2/lib/active_record/base.rb:15:in `<main>'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/bootsnap-1.18.3/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/bootsnap-1.18.3/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/zeitwerk-2.6.13/lib/zeitwerk/kernel.rb:34:in `require'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/ruby_supportlib/phusion_passenger/loader_shared_helpers.rb:315:in `before_handling_requests'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/helper-scripts/rack-preloader.rb:159:in `block in negotiate_spawn_command'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/ruby_supportlib/phusion_passenger/loader_shared_helpers.rb:380:in `run_block_and_record_step_progress'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/helper-scripts/rack-preloader.rb:158:in `negotiate_spawn_command'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/helper-scripts/rack-preloader.rb:211:in `<module:App>'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 10222 output:     /usr/share/rvm/gems/ruby-3.1.4/gems/passenger-6.0.4/src/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2024-03-09 19:08:13.1751 10109/Tz age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/nantheesh/Documents/others/Ruby/first_project: The application encountered the following error: The `staging` database is not configured for the `staging` environment.
+
+  Available database configurations are:
+
+  default
+development
+test
+production
+ (ActiveRecord::AdapterNotSpecified)
+  Error ID: e77ee17d
+  Error details saved to: /tmp/passenger-error-e5cFmz.html
+
+[ E 2024-03-09 19:08:13.1786 10109/T8 age/Cor/Con/CheckoutSession.cpp:276 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is e77ee17d. Please see earlier logs for details about the error.
+[ E 2024-03-09 19:08:13.3348 10109/T5 age/Cor/SecurityUpdateChecker.h:507 ]: Security update check failed: HTTP 500 while connecting to https://securitycheck.phusionpassenger.com/v1/check.json (if this error persists check your connection security or try upgrading Passenger) (next check in 24 hours)
+
+[ N 2024-03-09 19:08:50.2808 10109/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-03-09 19:08:50.2809 10109/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-03-09 19:08:50.2810 10109/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2810 10109/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-03-09 19:08:50.2811 10109/Th Ser/Server.h:902 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2811 10109/Ti Ser/Server.h:902 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2811 10109/Tc Ser/Server.h:902 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2811 10109/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-03-09 19:08:50.2811 10109/Te Ser/Server.h:902 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2811 10109/Tm Ser/Server.h:902 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2812 10109/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-03-09 19:08:50.2812 10109/Ts Ser/Server.h:902 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2812 10109/To Ser/Server.h:902 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2812 10109/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-03-09 19:08:50.2812 10109/Tu Ser/Server.h:902 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2812 10109/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-03-09 19:08:50.2813 10109/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-03-09 19:08:50.2811 10109/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-03-09 19:08:50.2813 10109/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-03-09 19:08:50.2811 10109/Tk Ser/Server.h:902 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2813 10109/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-03-09 19:08:50.2813 10109/Tw Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2814 10109/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-03-09 19:08:50.2814 10109/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-03-09 19:08:50.2811 10109/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2815 10109/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-03-09 19:08:50.2812 10109/Tq Ser/Server.h:902 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-03-09 19:08:50.2815 10109/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-03-09 19:08:51.7750 10109/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-03-09 19:08:52.8119 10341/T1 age/Wat/WatchdogMain.cpp:1373 ]: Starting Passenger watchdog...
+[ N 2024-03-09 19:08:52.8262 10344/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-03-09 19:08:52.8264 10344/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-03-09 19:08:52.8797 10344/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 10344
+[ E 2024-03-09 19:08:56.5566 10344/T5 age/Cor/SecurityUpdateChecker.h:507 ]: Security update check failed: HTTP 500 while connecting to https://securitycheck.phusionpassenger.com/v1/check.json (if this error persists check your connection security or try upgrading Passenger) (next check in 24 hours)
+
+[ N 2024-03-09 19:12:39.4531 10344/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-03-09 19:12:39.4532 10344/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-03-09 19:12:39.4532 10344/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 10441, application /home/nantheesh/Documents/others/Ruby/first_project (development)
+[ N 2024-03-09 19:12:39.4534 10344/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 10574, application /home/nantheesh/Documents/others/Ruby/first_project (development)
+[ N 2024-03-09 19:12:39.4536 10344/Tc Ser/Server.h:902 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4536 10344/Te Ser/Server.h:902 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4536 10344/Tg Ser/Server.h:902 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4537 10344/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-03-09 19:12:39.4536 10344/Tj Ser/Server.h:902 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4537 10344/Tk Ser/Server.h:902 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4537 10344/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4537 10344/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-03-09 19:12:39.4537 10344/Tm Ser/Server.h:902 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4537 10344/Tu Ser/Server.h:902 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4537 10344/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4538 10344/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-03-09 19:12:39.4537 10344/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-03-09 19:12:39.4538 10344/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-03-09 19:12:39.4538 10344/To Ser/Server.h:902 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4538 10344/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-03-09 19:12:39.4538 10344/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-03-09 19:12:39.4538 10344/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-03-09 19:12:39.4539 10344/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-03-09 19:12:39.4539 10344/Tq Ser/Server.h:902 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4539 10344/Tw Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4539 10344/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-03-09 19:12:39.4540 10344/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-03-09 19:12:39.4539 10344/Ts Ser/Server.h:902 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-03-09 19:12:39.4540 10344/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-03-09 19:12:39.4540 10344/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-03-09 19:12:39.4542 10344/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 10441, application /home/nantheesh/Documents/others/Ruby/first_project (development)
+[ N 2024-03-09 19:12:39.4544 10344/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 10574, application /home/nantheesh/Documents/others/Ruby/first_project (development)
+[ N 2024-03-09 19:12:41.1747 10344/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-03-09 19:12:42.6751 10813/T1 age/Wat/WatchdogMain.cpp:1373 ]: Starting Passenger watchdog...
+[ N 2024-03-09 19:12:42.6993 10816/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-03-09 19:12:42.6995 10816/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-03-09 19:12:42.7640 10816/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 10816
+[ E 2024-03-09 19:12:46.1596 10816/T5 age/Cor/SecurityUpdateChecker.h:507 ]: Security update check failed: HTTP 500 while connecting to https://securitycheck.phusionpassenger.com/v1/check.json (if this error persists check your connection security or try upgrading Passenger) (next check in 24 hours)
+
+[ N 2024-03-09 19:14:02.8820 10816/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-03-09 19:14:02.8822 10816/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-03-09 19:14:02.8822 10816/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 10913, application /home/nantheesh/Documents/others/Ruby/first_project (development)
+[ N 2024-03-09 19:14:02.8824 10816/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8824 10816/Te Ser/Server.h:902 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8824 10816/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8824 10816/Ti Ser/Server.h:902 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-03-09 19:14:02.8824 10816/Tu Ser/Server.h:902 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8824 10816/Tg Ser/Server.h:902 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Tq Ser/Server.h:902 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-03-09 19:14:02.8826 10816/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-03-09 19:14:02.8825 10816/To Ser/Server.h:902 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-03-09 19:14:02.8824 10816/Tc Ser/Server.h:902 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Ts Ser/Server.h:902 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Tk Ser/Server.h:902 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8826 10816/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-03-09 19:14:02.8826 10816/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-03-09 19:14:02.8824 10816/Tm Ser/Server.h:902 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8825 10816/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-03-09 19:14:02.8824 10816/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-03-09 19:14:02.8827 10816/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-03-09 19:14:02.8827 10816/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-03-09 19:14:02.8827 10816/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-03-09 19:14:02.8827 10816/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-03-09 19:14:02.8828 10816/Tw Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-03-09 19:14:02.8828 10816/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-03-09 19:14:02.8831 10816/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 10913, application /home/nantheesh/Documents/others/Ruby/first_project (development)
+[ N 2024-03-09 19:14:04.1809 10816/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
