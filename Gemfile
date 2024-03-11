@@ -54,7 +54,7 @@ gem "tzinfo-data"
 
 
 gem 'base64', '0.2.0'
-gem 'stringio', '3.1.0'
+gem 'stringio', '3.0.1'
 
 
 # Reduces boot times through caching; required in config/boot.rb
