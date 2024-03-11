@@ -43,7 +43,7 @@ gem "jbuilder"
 gem "tzinfo-data"
 
 
-gem 'base64', '0.2.0', path: 'vendor/gems/base64-0.2.0'
+gem 'base64', '0.2.0'
 gem 'stringio', '3.1.0'
 
 
