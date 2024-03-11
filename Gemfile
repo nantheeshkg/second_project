@@ -42,6 +42,11 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data"
 
+
+gem 'base64', '0.2.0', path: 'vendor/gems/base64-0.2.0'
+gem 'stringio', '3.1.0'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
