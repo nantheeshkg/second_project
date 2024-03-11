@@ -20,6 +20,14 @@ test:
   <<: *default
   database: storage/test.sqlite3
 
+# production:
+#   <<: *default
+#   database: storage/production.sqlite3
 production:
-  <<: *default
-  database: storage/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: production_books
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: root
+  timeout: 5000

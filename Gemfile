@@ -27,6 +27,9 @@ gem 'importmap-rails', '2.0.1'
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem 'pg'
+
+
 gem 'rack', '~> 2.2.3'
 
 gem "passenger", "6.0.4", require: "phusion_passenger/rack_handler"
